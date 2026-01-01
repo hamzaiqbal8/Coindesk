@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Commissioner:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="dashboard-wrapper">
+        <header class="header">
+          <div class="header_wrapper">
+            <div class="logo">
+              <div class="logo_wrapper">
+                <img
+                  alt="CoinGecko"
+                  class="!tw-h-6 2lg:!tw-h-8 tw-hidden dark:tw-block"
+                  src="https://static.coingecko.com/s/coingecko-logo-white-750bdea438e850281f784dffc8f4fd498415754f088d655a1140849745cb66ac.svg"
+                />
+              </div>
+            </div>
+            <div class="search-sort">
+              <div class="search-sort_wrapper">
+                <div class="search">
+                  <input type="text" placeholder="Search" id="search-inp" />
+                </div>
+                <div class="filter-sort">
+                  <div class="filter-sort_wrapper">
+                      <select id="sortOption">
+                        <option value="market_cap">Market Cap</option>
+                        <option value="price_high">Price: High to Low</option>
+                        <option value="price_low">Price: Low to High</option>
+                        <option value="change">Highest 24h Change</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <div class="main_wrapper">
+            <table class="crypto-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th class="coin-name">Coin</th>
+                  <th>Price</th>
+                  <th>1h</th>
+                  <th>24h</th>
+                  <th>7d</th>
+                  <th>24h Volume</th>
+                  <th>Market Cap</th>
+                  <th>Last 7 day</th>
+                </tr>
+               
+              </thead>
+              <tbody id="coinTableBody">
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
